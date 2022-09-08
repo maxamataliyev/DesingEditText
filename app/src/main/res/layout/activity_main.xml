@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Name"
+
+
+        app:startIconDrawable="@drawable/ic_person_24"
+        app:helperText="Required*"
+        app:helperTextTextColor="#ED0000"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+
+
+        android:layout_marginHorizontal="32dp">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/eText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="32dp"
+        app:helperText="Required*"
+        app:helperTextTextColor="#F40505"
+        app:startIconDrawable="@drawable/ic_baseline_phone_24"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+
+        app:endIconMode="custom"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@drawable/ic_baseline_error_24"
+
+
+        app:prefixText="+998"
+        app:prefixTextColor="@color/teal_700"
+
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+
+
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:helperText="Required*"
+        app:helperTextTextColor="#FB0505"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="12"
+
+        app:endIconMode="password_toggle"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="32dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
